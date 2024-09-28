@@ -1,0 +1,68 @@
+.navbar-brand{
+    color: #112A46;
+  }
+  .hero-profile {
+    height: auto;
+    /* background-color: cyan; */
+    background-color: rgba(13,202,240,1);
+  }
+  .hero-photo .text-intro{
+    color:#112A46
+  }
+
+  .img-image {
+    width: 100%;
+    height: auto;
+    /* border-radius: 50%; */
+  }
+
+  .text-profile {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .hero-photo {
+    width: 100%;
+    height: 95%;
+    /* border-radius: 50%; */
+  }
+
+  /* .text-profile:hover {
+    opacity: 0.3;
+    text-align: center;
+  } */
+
+  .text-white {
+    color: #fff !important;
+  }
+
+  .text-uppercase {
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase !important;
+  }
+
+  .display-1 {
+    font-size: calc(1.625rem + 4.5vw);
+    font-weight: 500 !important;
+    line-height: 1.2;
+  }
+
+  .progress .progress-bar {
+    border-radius: 10px;
+    transition: 2s;
+  }
+
+  .blog-date {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border-radius: 60px;
+    background: cyan;
+  }
