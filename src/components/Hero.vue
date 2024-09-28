@@ -1,19 +1,19 @@
 <template>
   <section id="profile-photo">
-    <div class="container-fluid p-0 m-0">
+    <div class="container-fluid  p-0 m-0">
       <!-- about photo hero -->
-      <div class="hero-profile">
-        <div class="row">
+      <div class="hero-profile pt-5">
+        <div class="row bg-black">
           <div
             class="col-xxl-6 col-lg-6 col-md-6 col-sm-12 img-profile text-center"
           >
             <img
               class=".img-fluid img-image"
-              src="images/my_image2.jpeg"
+              src="images/my_image.jpg"
               alt=""
             />
           </div>
-          <div class="col-xxl-6 col-lg-6 col-md-6 col-sm-12 text-profile px-5">
+          <div class="col-xxl-6 col-lg-6 col-md-6 col-sm-12 text-profile px-5 bg-black">
             <div>
               <h2 class="text-intro">Hi I'm</h2>
               <h1
@@ -22,7 +22,7 @@
               >
                 Chong Eang
               </h1>
-              <h2 class="text-intro">This is<span>my Portfolio</span></h2>
+              <h2 class="text-intro text-uppercase">Welcome to my Portfolio</h2>
               <span id="typedMessage" class="typed">{{ typed }}</span>
             </div>
           </div>
@@ -43,7 +43,7 @@ export default {
   mounted() {
       console.log('show sth');
       this.typed = new Typed('#typedMessage', {
-         strings: ['Designer', 'Developer', 'Freelancer'],
+         strings: ['Developer', 'Freelancer', 'UX/UI Designer',],
          typeSpeed: 150,
          loop: "true"
       });
@@ -51,5 +51,12 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.text-intro{
+  color: #6c757d
+}
+.typed{
+  font-size: 1.5rem;
+  color:white;
+}
 </style>
