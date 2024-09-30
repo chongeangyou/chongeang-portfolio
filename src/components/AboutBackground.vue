@@ -1,7 +1,7 @@
 <template>
   <section id="background">
-    <div class="container_fluid">
-      <div class="about py-3">
+    <div class="container_fluid my-5">
+      <div class="about">
         <div class="row py-2">
           <div class="col">
             <div
@@ -74,8 +74,8 @@
                   </h5>
                 </div>
               </div>
-              <a href="#" class="btn btn-outline-info">Contact Me</a>
-              <a href="#" class="btn btn-outline-info  ms-3">Learn More</a>
+              <a href="#" class="btn btn-outline-secondary">Contact Me</a>
+              <a href="#" class="btn btn-outline-secondary  ms-3">Learn More</a>
             </div>
           </div>
           <div class="col-xxl-4 col-lg-5 col-md-5 col-sm-6">
@@ -87,7 +87,7 @@
           </div>
         </div>
       </div>
-      <div class="background-experience text-bg-info py-3">
+      <div class="background-experience py-3">
         <BackgroundElement></BackgroundElement>
         <!-- <div class="row px-3 align-items-center">
           <div class="col-1"></div>
@@ -176,5 +176,9 @@ p.lead {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 500 !important;
   line-height: 1.2;
+}
+
+.background-experience {
+  background: #0B1215; 
 }
 </style>

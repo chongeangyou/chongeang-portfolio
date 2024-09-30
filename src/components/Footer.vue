@@ -1,16 +1,16 @@
  <template>
    <section id="footer">
-    <div class="container_fluid bg-info">
+    <div class="container_fluid bg-dark bg-gradient fw-lighter">
       <footer class="py-3 mt-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3 text-white">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Skill</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Service</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Skill</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Service</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Contact</a></li>
         </ul>
         <ul class="nav col-md-12 justify-content-center my-3 ">
-          <li class="ms-3"><a class="text-body-secondary" href="#">
+          <li class="ms-3"><a class="text-body-info" href="#">
               <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512">
                 <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
@@ -19,8 +19,8 @@
               </svg>
             </a>
           </li>
-          <li class="ms-3"><a class="text-body-secondary" href="#">
-              <svg width="24" heigh="24" xmlns="http://www.w3.org/2000/svg"
+          <li class="ms-3"><a class="text-white" href="#">
+              <svg width="24" class="text-white" heigh="24" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                 <path
                   d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
@@ -36,7 +36,7 @@
             </a>
           </li>
         </ul>
-        <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+        <p class="text-center text-white">© 2024 Company, Inc</p>
       </footer>
     </div>
   </section>

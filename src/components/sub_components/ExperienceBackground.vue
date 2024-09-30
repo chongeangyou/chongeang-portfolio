@@ -1,16 +1,16 @@
 <template>
      <div class="position-relative mb-4">
           <i
-            class="far fa-dot-circle text-primary position-absolute"
+            class="far fa-dot-circle text-des position-absolute"
             style="top: 5px; left: -25px"
           ></i>
-          <h5 class="font-weight-bold mb-1 text-body-secondary">
+          <h5 class="fw-light mb-1 text-white">
             {{ title }}
           </h5>
-          <p class="mb-2 text-body-secondary">
+          <p class="fw-light mb-2 text-white">
             <strong>{{ company }}</strong> | <small>{{year}}</small>
           </p>
-          <p>
+          <p class="text-des">
             {{description}}
           </p>
         </div>
@@ -28,5 +28,8 @@
   };
   </script>
   
-  <style>
+  <style scoped>
+    .text-des{
+      color: #6c757d
+    }
   </style>
