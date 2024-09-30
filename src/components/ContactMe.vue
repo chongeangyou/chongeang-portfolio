@@ -1,7 +1,7 @@
 <template>
    <section id="contact">
-    <div class="container_fluid">
-      <div class="contact_me">
+    <div class="container_fluid mt-5">
+      <div class="contact_me py-2">
         <div class="row py-2">
           <div class="col">
             <div class="position-relative d-flex align-items-center justify-content-center">

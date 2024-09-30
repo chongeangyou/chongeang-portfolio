@@ -1,7 +1,7 @@
 <template>
   <section id="background">
-    <div class="container_fluid my-5">
-      <div class="about">
+    <div class="container_fluid mt-5">
+      <div class="about py-2">
         <div class="row py-2">
           <div class="col">
             <div

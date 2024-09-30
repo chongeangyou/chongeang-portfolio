@@ -1,8 +1,8 @@
 <template>
     <section id="skill">
-    <div class="container_fluid">
+    <div class="container_fluid mt-5">
       <div class="progmaing_skill">
-        <div class="my_skill">
+        <div class="my_skill py-2">
           <div class="row py-2">
             <div class="col">
               <div class="position-relative d-flex align-items-center justify-content-center">

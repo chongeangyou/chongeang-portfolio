@@ -1,29 +1,30 @@
 <template>
   <Hero></Hero>
   <AboutBackground />
-  <PersonalSkill/>
-  <MyService/>
-  <MyBlog/>
-  <ContactMe/>
+  <Skill/>
+  <Service/>
+  <Blog/>
+  <Contact/>
+  
 </template>
   
   <script>
 import Hero from "@/components/Hero.vue";
 import AboutBackground from "@/components/AboutBackground.vue";
-import PersonalSkill from "@/components/PersonalSkill.vue";
-import MyService from "@/components/MyService.vue";
-import MyBlog from "@/components/MyBlog.vue";
-import ContactMe from "@/components/ContactMe.vue";
+import Skill from "@/pages/Skill.vue";
+import Blog from "@/pages/Blog.vue";
+import Contact from "@/pages/Contact.vue";
+import Service from "@/pages/Service.vue";
 
 export default {
   name: "App",
   components: {
     Hero,
     AboutBackground,
-    PersonalSkill,
-    MyService,
-    MyBlog,
-    ContactMe
+    Skill,
+    Service,
+    Blog,
+    Contact
   },
 };
 </script>
