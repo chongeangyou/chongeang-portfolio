@@ -35,7 +35,7 @@
               v-for="(item, index) in articles" :key="index"
               :title="item.title"
               :description="item.author"
-              :url="item.title"
+              :url="item.author"
             >
             </BlogCard>
             <!-- <BlogCard
