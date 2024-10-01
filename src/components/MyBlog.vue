@@ -37,6 +37,7 @@
 <script>
 import BlogCard from "@/components/sub_components/BlogCard.vue";
 import axios from "axios";
+import { courseAPI } from "@/utils/api.js";
 export default {
   components: {
     BlogCard,
@@ -60,8 +61,9 @@ export default {
   },
   async created() {
     try {
-      const url = "/v1/courses"
-      const response = await axios.get(url)
+      // const url = "/v1/courses"
+      // const response = await axios.get(url)
+      const response = await axios.get(courseAPI())
       const article = response.data
       this.articles = article;
       console.log(this.articles)
