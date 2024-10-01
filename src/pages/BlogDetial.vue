@@ -1,7 +1,7 @@
 <template>
   <div v-for="(item, index) in dataDetail" :key="index" class="py-5 mt-5">
     <h3>{{ item.title }}</h3>
-    <p> {{ item.author }}</p>
+    <h4> {{ item.author }}</h4>
   </div>
 </template>
 <script>
@@ -15,7 +15,7 @@ export default {
   async created() {
     try {
       const url =
-        "https://poetrydb.org/title/" + this.$route.params.id;
+        "/title/" + this.$route.params.id;
       const response = await axios.get(url);
       const data = response.data
       this.dataDetail = data;
@@ -24,5 +24,8 @@ export default {
         console.log(error)
     }
   },
+  methods:{
+    
+  }
 }
 </script>

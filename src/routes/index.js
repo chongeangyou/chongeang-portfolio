@@ -17,9 +17,10 @@ const routes = [
     {path: '/skill', component: Skill },
     {path: '/service', component: Service},
     {path: '/blog', component: Blog},
-    {path: '/test/:id', component: BlogDetial},
+    {path: '/blog/:id', component: BlogDetial},
     {path: '/contact', component: Contact},
-    {path: '/test', component: TestApi}
+    {path: '/test', component: TestApi},
+    {path: '/test:id', component: TestApi}
 ]
 
 const router = createRouter({

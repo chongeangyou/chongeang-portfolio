@@ -13,7 +13,7 @@
         </p>
       </div>
       <div class="card-footer">
-        <router-link class="btn btn-sm btn-outline-info" :to="`/test/${url}`">Read More</router-link>
+        <router-link class="btn btn-sm btn-outline-info" :to="`/blog/${url}`">Read More</router-link>
         <small class="text-muted ms-2">Last updated 3 mins ago</small>
       </div>
     </div>

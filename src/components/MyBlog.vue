@@ -31,16 +31,17 @@
             </p>
           </div>
           <div class="row">
-            <!-- <BlogCard
+            <BlogCard
               v-for="(item, index) in articles" :key="index"
               :title="item.title"
-              :description="item.shortDescription"
+              :description="item.author"
+              :url="item.title"
             >
-            </BlogCard> -->
-            <BlogCard
+            </BlogCard>
+            <!-- <BlogCard
               :title="articles.reference"
               :description="articles.text"
-            />
+            /> -->
           </div>
         </div>
       </div>
