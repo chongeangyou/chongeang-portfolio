@@ -64,7 +64,7 @@
     async created() {
       try {
         // const url = "/v1/courses"
-        const response = await axios.get('https://bible-api.com/jn 3:16')
+        const response = await axios.get('/jn 3:16')
        // const response = await axios.get(courseAPI())
         const article = response.data
         this.articles = article;
