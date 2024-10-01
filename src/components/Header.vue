@@ -68,9 +68,16 @@ export default {
           path: '/contact',
           name: 'contact'
         }
-      ]
+      ],
     }
   },
+
+  mounted() {
+    document.addEventListener('click', this.handleClickOutside);
+  },
+  beforeUnmount() {
+    document.removeEventListener('click', this.handleClickOutside);
+  }, 
   methods:{
     changeLanguage(){
       console.log('dd')
@@ -80,8 +87,9 @@ export default {
       }else{
         this.$i18n.locale = 'en'
       }
-    }
-  }
+    },
+  },
+  
 }
 </script>
 

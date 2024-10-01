@@ -5,10 +5,12 @@
         <div class="row pt-2">
           <div class="col">
             <div
-              class="position-relative d-flex align-items-center justify-content-center">
+              class="position-relative d-flex align-items-center justify-content-center"
+            >
               <h1
                 class="display-1 text-uppercase text-white"
-                style="-webkit-text-stroke: 1px #00F2FE">
+                style="-webkit-text-stroke: 1px #00f2fe"
+              >
                 blog
               </h1>
               <h1 class="position-absolute text-uppercase text-secondary">
@@ -20,10 +22,9 @@
         <div class="blog_item px-3">
           <div class="row">
             <BlogCard
-              v-for="(item, index) in blogDatas"
-              :key="index"
+              v-for="(item, index) in articles" :key="index"
               :title="item.title"
-              :description="item.description"
+              :description="item.shortDescription"
             >
             </BlogCard>
           </div>
@@ -35,6 +36,7 @@
 
 <script>
 import BlogCard from "@/components/sub_components/BlogCard.vue";
+import axios from "axios";
 export default {
   components: {
     BlogCard,
@@ -53,7 +55,19 @@ export default {
             "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
         },
       ],
+      articles: []
     };
+  },
+  async created() {
+    try {
+      const url = "/v1/courses"
+      const response = await axios.get(url)
+      const article = response.data
+      this.articles = article;
+      console.log(this.articles)
+    } catch (error) {
+      console.log(error);
+    }
   },
 };
 </script>

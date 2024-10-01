@@ -9,7 +9,7 @@
             >
               <h1
                 class="display-1 text-uppercase text-white"
-                style="-webkit-text-stroke: 1px #00F2FE"
+                style="-webkit-text-stroke: 1px #4FACFE"
               >
                 About
               </h1>
@@ -24,20 +24,17 @@
         <div class="row px-4">
           <div class="col-xxl-8 col-lg-7 col-md-7 col-sm-6">
             <div class="background-summary px-2 mt-3 mb-3">
-              <h3 class="mb-4">Web Developer &amp; UI/UX Designer</h3>
+              <h3 class="mb-4" style="color: #213A57">{{ mainTitle }}</h3>
               <p class="lead">
-                Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit
-                amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd
-                sed ea lorem diam ea lorem eirmod duo sit ipsum. Amet dolor stet
-                lorem diam dolor justo et dolor dolor dolor
+                {{ shortDescription }}
               </p>
               <div class="row mb-3">
-                <div class="col-sm-6 py-2">
-                  <h5 class="general-info">
-                    Name: <span class="text-secondary"> B.ChongEang</span>
+                <div class="col-sm-6 py-2" v-for="(item, index) in dataInfo" :key="index">
+                  <h5 class="general-info fw-light">
+                    {{ item.title }} : <span class="text-secondary"> {{item.data}}</span>
                   </h5>
                 </div>
-                <div class="col-sm-6 py-2">
+                <!-- <div class="col-sm-6 py-2">
                   <h5>
                     Birthday: <span class="text-secondary">1 April 1900</span>
                   </h5>
@@ -72,10 +69,10 @@
                   <h5>
                     Freelance: <span class="text-secondary">Available</span>
                   </h5>
-                </div>
+                </div> -->
               </div>
-              <a href="#" class="btn btn-outline-info">Contact Me</a>
-              <a href="#" class="btn btn-outline-info  ms-3">Learn More</a>
+              <a href="#" class="btn btn-outline-primary">Contact Me</a>
+              <a href="#" class="btn btn-outline-primary  ms-3">Learn More</a>
             </div>
           </div>
           <div class="col-xxl-4 col-lg-5 col-md-5 col-sm-6">
@@ -159,6 +156,42 @@ export default {
   data() {
     return {
       headTitle: ["about", "about me"],
+      mainTitle: "Web Developer & Blogger",
+      shortDescription: "A Web Developer and Blogger designs and develops websites. They also create and manage blog content. This role combines coding skills with writing. It ensures seamless website functionality and engaging user experiences." ,
+      dataInfo: [
+        {
+          title: 'Name',
+          data: 'ChongEang'
+        },
+        {
+          title: 'Degree',
+          data:'Bacherlor'
+        },
+        {
+          title: 'Phone',
+          data:'+012 345 678'
+        },
+        {
+          title: 'Address',
+          data:'123 Street, Phnom Penh, Cambodia'
+        },
+        {
+          title: 'Birthday',
+          data:'1 April 1900'
+        },
+        {
+          title: 'Experience',
+          data:'1 Years'
+        },
+        {
+          title: 'Email',
+          data:'chong@email.com'
+        },
+        {
+          title: 'Freelance',
+          data:'Available'
+        },
+      ]
     };
   },
 };

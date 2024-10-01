@@ -42,7 +42,7 @@
                 </div>
               </div>
               <div class="col-12 ">
-                <button type="submit" class="btn btn-outline-info text-uppercase">Send Message</button>
+                <button type="submit" class="btn btn-outline-primary text-uppercase">Send Message</button>
               </div>
             </form>
           </div>

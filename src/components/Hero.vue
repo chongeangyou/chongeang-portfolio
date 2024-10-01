@@ -43,7 +43,7 @@ export default {
   mounted() {
       console.log('show sth');
       this.typed = new Typed('#typedMessage', {
-         strings: ['Developer', 'Freelancer', 'UX/UI Designer',],
+         strings: ['Developer', 'Freelancer', 'Blogger',],
          typeSpeed: 150,
          loop: "true"
       });

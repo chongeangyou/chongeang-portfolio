@@ -11,11 +11,11 @@ const messages = {
         langCode: 'English'
     },
     khm: {
-        home: 'ទំព៏រដើម',
+        home: 'ទំព័រដើម',
         about: 'អំពីខ្ញុំ',
         skill: 'ជំនាញ',
         service: 'សេវាកម្ម',
-        blog: 'ប្លុក',
+        blog: 'អត្ថបទ',
         contact: 'ទំនាក់ទំនង',
         langCode: 'ភាសាខ្មែរ'
     }
