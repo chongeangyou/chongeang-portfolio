@@ -21,14 +21,15 @@
           </div>
           <div class="blog_item px-3">
             <div class="row">
-              <!-- <BlogCard
-                v-for="item in articles" :key="item.id"
-                :title="item.reference"
-                :description="item.text"
+              <BlogCard
+                v-for="(item,index) in articles" :key="index"
+                :title="item.title"
+                :description="item.author"
+                :url="item.title"
               >
-              </BlogCard> -->
-              <BlogCard :title="articles.reference" :description="articles.text"/>
-              <p> {{ articles.text }}</p>
+              </BlogCard>
+              <!-- <BlogCard :title="articles.reference" :description="articles.text"/>
+              <p> {{ articles.text }}</p> -->
             </div>
           </div>
         </div>
@@ -64,7 +65,7 @@
     async created() {
       try {
         // const url = "/v1/courses"
-        const response = await axios.get('/jn 3:16')
+        const response = await axios.get('https://poetrydb.org/title,random/Sonnet;3')
        // const response = await axios.get(courseAPI())
         const article = response.data
         this.articles = article;

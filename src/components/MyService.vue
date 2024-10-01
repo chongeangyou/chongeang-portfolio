@@ -13,6 +13,9 @@
         </div>
       </div>
       <div class="services-feature py-3">
+        <div class="intro-service px-2">
+            <p class="lead"> I offer comprehensive services in development projects, focusing on creating functional and efficient web applications. My expertise in design ensures visually appealing and user-friendly interfaces, while my hosting services provide reliable and secure environments for websites and applications to run smoothly.</p>
+        </div>
         <div class="row text-center">
           <div class="col-lg-4">
             <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="0 0 640 512">
@@ -69,5 +72,12 @@ export default {
 <style scoped>
 svg path {
   fill: #4FACFE; 
+}
+p.lead{
+    font-weight: 150;
+    font-size: 1.4rem;
+    line-height: 1.833;
+    margin-bottom: 3.6rem;
+    color: #000000;
 }
 </style>

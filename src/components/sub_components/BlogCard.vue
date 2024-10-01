@@ -13,7 +13,7 @@
         </p>
       </div>
       <div class="card-footer">
-        <a class="btn btn-sm btn-outline-info" href="#">Read More</a>
+        <router-link class="btn btn-sm btn-outline-info" :to="`/test/${url}`">Read More</router-link>
         <small class="text-muted ms-2">Last updated 3 mins ago</small>
       </div>
     </div>
@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  props: ["title", "description"]
+  props: ["title", "description", "url"]
 }
 </script>
 

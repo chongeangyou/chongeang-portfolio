@@ -20,6 +20,16 @@
           </div>
         </div>
         <div class="blog_item px-3">
+          <div class="intro-service px-2">
+            <p class="lead">
+              On my portfolio blog, I regularly post content about web
+              development, sharing insights and tips on JavaScript, Vue.js,
+              Laravel, and other technologies I work with. I also cover topics
+              related to design principles, project development, and the
+              importance of secure and reliable hosting. My blog aims to provide
+              valuable resources for developers and clients alike.
+            </p>
+          </div>
           <div class="row">
             <!-- <BlogCard
               v-for="(item, index) in articles" :key="index"
@@ -28,8 +38,8 @@
             >
             </BlogCard> -->
             <BlogCard
-            :title="articles.reference"
-            :description="articles.text"
+              :title="articles.reference"
+              :description="articles.text"
             />
           </div>
         </div>
@@ -60,17 +70,17 @@ export default {
             "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
         },
       ],
-      articles: []
+      articles: [],
     };
   },
   async created() {
     try {
       // const url = "/v1/courses"
       // const response = await axios.get(url)
-      const response = await axios.get(courseAPI())
-      const article = response.data
+      const response = await axios.get(courseAPI());
+      const article = response.data;
       this.articles = article;
-      console.log(this.articles)
+      console.log(this.articles);
     } catch (error) {
       console.log(error);
     }
