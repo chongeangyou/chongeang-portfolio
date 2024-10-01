@@ -1,6 +1,6 @@
  <template>
    <section id="footer">
-    <div class="container_fluid bg-dark bg-gradient fw-lighter">
+    <div class="container_fluid bg-gradient fw-lighter bg-footer">
       <footer class="py-3 mt-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3 text-white">
           <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
@@ -39,6 +39,9 @@
         <p class="text-center text-white">© 2024 Company, Inc</p>
       </footer>
     </div>
+    <div>
+      
+    </div>
   </section>
  </template>
  
@@ -48,6 +51,8 @@
  }
  </script>
  
- <style>
- 
+ <style scoped>
+  .bg-footer{
+    background: #213A57
+  }
  </style>

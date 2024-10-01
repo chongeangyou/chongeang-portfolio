@@ -9,7 +9,7 @@
             >
               <h1
                 class="display-1 text-uppercase text-white"
-                style="-webkit-text-stroke: 1px #6c757d"
+                style="-webkit-text-stroke: 1px #00F2FE"
               >
                 About
               </h1>
@@ -74,8 +74,8 @@
                   </h5>
                 </div>
               </div>
-              <a href="#" class="btn btn-outline-secondary">Contact Me</a>
-              <a href="#" class="btn btn-outline-secondary  ms-3">Learn More</a>
+              <a href="#" class="btn btn-outline-info">Contact Me</a>
+              <a href="#" class="btn btn-outline-info  ms-3">Learn More</a>
             </div>
           </div>
           <div class="col-xxl-4 col-lg-5 col-md-5 col-sm-6">
@@ -87,7 +87,7 @@
           </div>
         </div>
       </div>
-      <div class="background-experience py-3">
+      <div class="background-experience py-5">
         <BackgroundElement></BackgroundElement>
         <!-- <div class="row px-3 align-items-center">
           <div class="col-1"></div>
@@ -179,6 +179,6 @@ p.lead {
 }
 
 .background-experience {
-  background: #0B1215; 
+  background: #213A57; 
 }
 </style>

@@ -5,7 +5,7 @@
         <div class="row py-2">
           <div class="col">
             <div class="position-relative d-flex align-items-center justify-content-center">
-              <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke:1px #6c757d;">Contact
+              <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke:1px #1488CC;">Contact
               </h1>
               <h1 class="position-absolute text-uppercase text-secondary">Contact Me</h1>
             </div>
@@ -42,7 +42,7 @@
                 </div>
               </div>
               <div class="col-12 ">
-                <button type="submit" class="btn btn-secondary text-uppercase text-white">Send Message</button>
+                <button type="submit" class="btn btn-outline-info text-uppercase">Send Message</button>
               </div>
             </form>
           </div>
@@ -58,6 +58,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+ .submit-text{
+  color: #1488CC
+ }
 </style>

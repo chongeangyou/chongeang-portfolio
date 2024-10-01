@@ -6,7 +6,7 @@
           <div class="row py-2">
             <div class="col">
               <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke:1px #6c757d;">Programing
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke:1px #00F2FE;">Programing
                 </h1>
                 <h1 class="position-absolute text-uppercase text-secondary">My Skills</h1>
               </div>

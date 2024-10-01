@@ -2,10 +2,10 @@
   <section id="services">
     <div class="container_fluid mt-5">
       <div class="my_services py-2">
-        <div class="row py-2">
+        <div class="row mt-2">
           <div class="col">
             <div class="position-relative d-flex align-items-center justify-content-center">
-              <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke:1px #6c757d">Services
+              <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke:1px #4FACFE">Services
               </h1>
               <h1 class="position-absolute text-uppercase text-secondary">My Service</h1>
             </div>
@@ -24,7 +24,7 @@
             <h2 class="fw-normal">Development</h2>
             <p>Some representative placeholder content for the three columns of text below the carousel. This is the
               first column.</p>
-            <p><a class="btn btn-secondary" href="#">View details »</a></p>
+            <p><a class="btn btn-sm btn-outline-primary" href="#">View details »</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="140"
@@ -35,7 +35,7 @@
             <h2 class="fw-normal">Design</h2>
             <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second
               column.</p>
-            <p><a class="btn btn-secondary" href="#">View details »</a></p>
+            <p><a class="btn btn-sm btn-outline-primary" href="#">View details »</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <svg xmlns="http://www.w3.org/2000/svg" width="140" height="140"
@@ -45,7 +45,7 @@
             </svg>
             <h2 class="fw-normal">Hosting</h2>
             <p>And lastly this, the third column of representative jjjjjjjjjjjj placeholder content.</p>
-            <p><a class="btn btn-secondary" href="#">View details »</a></p>
+            <p><a class="btn btn-sm btn-outline-primary" href="#">View details »</a></p>
           </div><!-- /.col-lg-4 -->
         </div>
       </div>
