@@ -8,6 +8,7 @@ import Skill from '@/pages/Skill.vue'
 import Service from '@/pages/Service.vue'
 import Blog from '@/pages/Blog.vue'
 import Contact from '@/pages/Contact.vue'
+import TestApi from '@/components/TestApi.vue'
 
 const routes = [
     {path: '/', component: Home},
@@ -15,7 +16,8 @@ const routes = [
     {path: '/skill', component: Skill },
     {path: '/service', component: Service},
     {path: '/blog', component: Blog},
-    {path: '/contact', component: Contact}
+    {path: '/contact', component: Contact},
+    {path: '/test', component: TestApi}
 ]
 
 const router = createRouter({
