@@ -20,7 +20,7 @@
           </div>
         </div>
         <div class="blog_item px-3">
-          <div class="intro-service px-2">
+          <div class="intro-blog px-2">
             <p class="lead">
               On my portfolio blog, I regularly post content about web
               development, sharing insights and tips on JavaScript, Vue.js,
@@ -89,5 +89,12 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+  p.lead{
+    font-weight: 150;
+    font-size: 1.4rem;
+    line-height: 1.833;
+    margin-bottom: 3.6rem;
+    color: #000000;
+}
 </style>

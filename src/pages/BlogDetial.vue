@@ -14,8 +14,7 @@ export default {
   },
   async created() {
     try {
-      const url =
-        "/title/" + this.$route.params.id;
+      const url = `${process.env.VUE_APP_URL}` + "/title/" + this.$route.params.id;
       const response = await axios.get(url);
       const data = response.data
       this.dataDetail = data;
