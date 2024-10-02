@@ -29,9 +29,9 @@
             <!-- <li class="nav-item">
               <router-link class="nav-link" :class="{active: $route.path == '/contact'}" to="/contact">Contact</router-link>
             </li> -->
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <router-link class="nav-link" :class="{active: $route.path == '/test'}" to="/test">Test</router-link>
-            </li>
+            </li> -->
             <li class="nav-item">
               <button type="button" @click="changeLanguage" class="btn btn-sm btn-outline-secondary p-1 align-center mt-1">{{ $t('langCode')}}</button>
             </li>

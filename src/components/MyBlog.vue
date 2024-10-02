@@ -51,8 +51,10 @@
 
 <script>
 import BlogCard from "@/components/sub_components/BlogCard.vue";
-import axios from "axios";
-import { courseAPI } from "@/utils/api.js";
+//import axios from "axios";
+//import { courseAPI } from "@/utils/api.js";
+import { useBlogArticleStore } from "@/store/blog.js";
+import { mapState, mapActions} from 'pinia'
 export default {
   components: {
     BlogCard,
@@ -71,21 +73,31 @@ export default {
             "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
         },
       ],
-      articles: [],
+     // articles: [],
     };
   },
-  async created() {
-    try {
-      // const url = "/v1/courses"
-      // const response = await axios.get(url)
-      const response = await axios.get(courseAPI());
-      const article = response.data;
-      this.articles = article;
-      console.log(this.articles);
-    } catch (error) {
-      console.log(error);
-    }
+  created(){
+    this.getBlogArticles();
+    console.log(this.articles)
   },
+  computed:{
+    ...mapState(useBlogArticleStore, ['articles'])
+  },
+  methods:{
+    ...mapActions(useBlogArticleStore, ['getBlogArticles'])
+  }
+  // async created() {
+  //   try {
+  //     // const url = "/v1/courses"
+  //     // const response = await axios.get(url)
+  //     const response = await axios.get(courseAPI());
+  //     const article = response.data;
+  //     this.articles = article;
+  //     console.log(this.articles);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // },
 };
 </script>
 

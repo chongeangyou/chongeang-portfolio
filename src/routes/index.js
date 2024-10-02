@@ -10,6 +10,7 @@ import Blog from '@/pages/Blog.vue'
 import Contact from '@/pages/Contact.vue'
 import TestApi from '@/components/TestApi.vue'
 import BlogDetial from '@/pages/BlogDetial.vue'
+import NotFound from '@/pages/NotFound.vue'
 
 const routes = [
     {path: '/', component: Home},
@@ -20,7 +21,9 @@ const routes = [
     {path: '/blog/:id', component: BlogDetial},
     {path: '/contact', component: Contact},
     {path: '/test', component: TestApi},
-    {path: '/test:id', component: TestApi}
+    {path: '/test:id', component: TestApi},
+    {path: '/:pathMatch(.*)*', component: NotFound}
+
 ]
 
 const router = createRouter({

@@ -7,6 +7,7 @@
           <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About</a></li>
           <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Skill</a></li>
           <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Service</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Blog</a></li>
           <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Contact</a></li>
         </ul>
         <ul class="nav col-md-12 justify-content-center my-3 ">
