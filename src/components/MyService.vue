@@ -23,11 +23,7 @@
       <div class="services-feature py-3">
         <div class="intro-service px-2">
           <p class="lead">
-            I offer comprehensive services in development projects, focusing on
-            creating functional and efficient web applications. My expertise in
-            design ensures visually appealing and user-friendly interfaces,
-            while my hosting services provide reliable and secure environments
-            for websites and applications to run smoothly.
+            {{ $t(shortDescription) }}
           </p>
         </div>
         <div class="row text-center">
@@ -46,12 +42,11 @@
 
             <h2 class="fw-normal">Development</h2>
             <p class="fw-light">
-              Provide professional development services focused on creating
-              high-quality web applications and platforms. .
+             {{$t(devDescription)}}
             </p>
             <p>
               <a class="btn btn-sm btn-outline-primary" href="#"
-                >View details »</a
+                >{{ $t(viewMore) }} »</a
               >
             </p>
           </div>
@@ -70,13 +65,11 @@
             </svg>
             <h2 class="fw-normal">Design</h2>
             <p class="fw-light">
-              With attention to detail and a deep understanding of user
-              experience (UX) principles, I craft designs that enhance
-              functionality and engagement.
+              {{$t(designDescription)}}
             </p>
             <p>
               <a class="btn btn-sm btn-outline-primary" href="#"
-                >View details »</a
+                >{{$t(viewMore)}} »</a
               >
             </p>
           </div>
@@ -95,12 +88,11 @@
             </svg>
             <h2 class="fw-normal">Hosting</h2>
             <p class="fw-light">
-              My hosting solutions offer fast performance, high uptime, and
-              robust security measures to protect your data
+              {{$t(hostDescription)}}
             </p>
             <p>
               <a class="btn btn-sm btn-outline-primary" href="#"
-                >View details »</a
+                >{{$t(viewMore)}} »</a
               >
             </p>
           </div>
@@ -114,7 +106,14 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+        mainTitle: '',
+        shortDescription: 'service_description',
+        devDescription: 'dev_description',
+        designDescription: 'design_description',
+        hostDescription: 'host_description',
+        viewMore: 'view_more'
+    };
   },
   mounted() {
     console.log("print sth");

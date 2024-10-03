@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="col-lg-5 mx-3">
-      <h3 class="mb-4 text-white">My Expericence</h3>
+      <h3 class="mb-4 text-white">Expericences</h3>
       <div class="border-left border-primary pt-2 pl-4 ml-2">
         <ExperienceBackground v-for="(item, index) in experiences"
           :key="index"
@@ -51,34 +51,34 @@ export default {
                     description: " Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor e ",
                 },
                 {
-                    title: 'Bacherlor In CSE',
-                    name: 'Royal University Phnom Penh',
+                    title: 'Diploma Degree',
+                    name: 'Sisowath High School',
                     year: '2000 - 2050',
                     description: " Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor e ",
                 },
                 {
-                    title: 'Bacherlor In CSE',
-                    name: 'Royal University Phnom Penh',
+                    title: 'Lower Diplopma',
+                    name: 'Arey Khsat Secondary School',
                     year: '2000 - 2050',
                     description: " Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor e ",
                 },
             ],
              experiences:[
                 {
-                    title: 'Bacherlor In CSE',
-                    company: 'Royal University Phnom Penh',
+                    title: 'Official',
+                    company: 'Ministry of Post and Telecommucations',
                     year: '2000 - 2050',
                     description: " Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor e ",
                 },
                 {
-                    title: 'Bacherlor In CSE',
-                    company: 'Royal University Phnom Penh',
+                    title: 'Web Developer',
+                    company: 'Freelance',
                     year: '2000 - 2050',
                     description: " Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor e ",
                 },
                 {
-                    title: 'Bacherlor In CSE',
-                    company: 'Royal University Phnom Penh',
+                    title: 'Intern Web developer',
+                    company: 'Mitsubishi Phnom Phenh CORP',
                     year: '2000 - 2050',
                     description: " Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor e ",
                 },

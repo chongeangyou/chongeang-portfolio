@@ -11,7 +11,7 @@
           <span class="navbar-text me-auto">
           </span>
           <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item" v-for="(item, index) in navs" :key="index" >
+            <li class="nav-item" v-for="(item, index) in navs" :key="index">
               <router-link class="nav-link" :class="{active: $route.path == item.path }" :to="item.path" > {{ $t(item.name) }}</router-link>
             </li>
             <!-- <li class="nav-item">
@@ -74,13 +74,6 @@ export default {
       ],
     }
   },
-
-  mounted() {
-    document.addEventListener('click', this.handleClickOutside);
-  },
-  beforeUnmount() {
-    document.removeEventListener('click', this.handleClickOutside);
-  }, 
   methods:{
     changeLanguage(){
       console.log('dd')
@@ -110,5 +103,4 @@ export default {
 .navbar-toggler{
   background-color:white !important
 }
-
 </style>

@@ -16,29 +16,29 @@
       <div class="form_contact mx-5">
         <div class="intro-contact px-2">
           <p class="lead">
-            If you'd like to get in touch with me, please fill out the form below, and I will respond to your inquiry as soon as possible. I look forward to assisting you with your project!
+            {{ $t(shortDescription) }}
           </p>
         </div>
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <Form class="row g-3 text-secondary">
               <div class="col-md-6">
-                <label for="inputFullname" class="Form-label">You Fullname</label>
+                <label for="inputFullname" class="Form-label">{{ $t(fullname) }}</label>
                 <Field type="text" class="form-control border-secondary" name="fullname" :rules="nameRule" :v-model="fullname" id="fullname" placeholder="Please input your fullname" />
                 <ErrorMessage name="fullname"/>
               </div>
               <div class="col-md-6">
-                <label for="inputEmail" class="form-label mb-0">You Email</label>
+                <label for="inputEmail" class="form-label mb-0">{{$t(email)}}</label>
                 <Field type="text" class="form-control border-secondary" name="email" :rules="emailRule" :v-model="email" id="inputEmail" placeholder="Please input your eamail" />
                 <ErrorMessage name="email"/>
               </div>
               <div class="col-12">
-                <label for="inputSubject" class="form-label">Subject</label>
+                <label for="inputSubject" class="form-label">{{$t(subject)}}</label>
                 <Field type="text" class="form-control border-secondary" name="subject" :rules="subjectRule" :v-model="subject" id="inputSubject" placeholder="What is your subject?" />
                 <ErrorMessage name="subject"/>
               </div>
               <div class="col-12">
-                <label for="inputMessage" class="form-label">Message</label>
+                <label for="inputMessage" class="form-label">{{$t(message)}}</label>
                 <Field class="form-control border-secondary" name="message" :rules="messageRule" :v-model="message" type="text" id="inputMessage" rows="3" placeholder="Input your message" />
                 <ErrorMessage name="message"/>
               </div>
@@ -46,12 +46,12 @@
                 <div class="form-check">
                   <input class="form-check-input" name="check" type="checkbox" id="gridCheck">
                   <label class="form-check-label" for="gridCheck">
-                    Check me out
+                    {{$t(check)}}
                   </label>
                 </div>
               </div>
               <div class="col-12 ">
-                <button type="submit" class="btn btn-outline-primary text-uppercase">Send Message</button>
+                <button type="submit" class="btn btn-outline-primary text-uppercase">{{$t(submit)}}</button>
               </div>
             </Form>
           </div>
@@ -68,15 +68,17 @@ export default {
   components: { Form, Field, ErrorMessage },
   data(){
     return{
-      fullname: '',
-      email: '',
-      subject:'',
-      message: '',
-      check:'',
+      fullname: 'full_name',
+      email: 'contact_email',
+      subject:'subject',
+      message: 'message',
+      check:'check',
       nameRule: Yup.string().required(),
       emailRule: Yup.string().email().required(),
       subjectRule: Yup.string().required(),
-      messageRule: Yup.string().required()
+      messageRule: Yup.string().required(),
+      shortDescription: 'contact_description',
+      submit:'submit'
     }
   }
 }

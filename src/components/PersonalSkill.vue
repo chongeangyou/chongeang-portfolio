@@ -15,7 +15,7 @@
         </div>
         <div class="skill-item mx-3">
           <div class="intro-skill">
-            <p class="lead"> I have strong programming skills in JavaScript, HTML, and CSS, which allow me to build dynamic, responsive web interfaces. I'm proficient in Vue.js, using its reactive framework to create seamless user experiences. Additionally, I have experience with PHP and Laravel, enabling me to develop robust back-end solutions and integrate front-end and back-end systems efficiently.</p>
+            <p class="lead"> {{$t(shorDescription) }}</p>
           </div>
           <div class="row align-items-center">
             <div class="col-md-6">
@@ -91,7 +91,11 @@
 
 <script>
 export default {
-
+  data(){
+    return{
+      shorDescription: 'skill_description'
+    }
+  }
 }
 </script>
 

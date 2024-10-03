@@ -1,6 +1,6 @@
 import axios from "axios";
 import { defineStore } from "pinia";
-import { courseAPI } from "@/utils/api.js";
+import { articleAPI } from "@/utils/api.js";
 
 export const useBlogArticleStore = defineStore('aritlces', {
     state: () =>({
@@ -11,7 +11,7 @@ export const useBlogArticleStore = defineStore('aritlces', {
             try {
                 // const url = "/v1/courses"
                 // const response = await axios.get(url)
-                const response = await axios.get(courseAPI());
+                const response = await axios.get(articleAPI());
                 const article = response.data;
                 this.articles = article;
                 console.log(this.articles);

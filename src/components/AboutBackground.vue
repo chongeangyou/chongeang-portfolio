@@ -24,14 +24,14 @@
         <div class="row px-4">
           <div class="col-xxl-8 col-lg-7 col-md-7 col-sm-6">
             <div class="background-summary px-2 mt-3 mb-3">
-              <h3 class="mb-4" style="color: #213A57">{{ mainTitle }}</h3>
+              <h3 class="mb-4" style="color: #213A57">{{ $t(mainTitle) }}</h3>
               <p class="lead">
-                {{ shortDescription }}
+                {{ $t(shortDescription) }}
               </p>
               <div class="row mb-3">
                 <div class="col-sm-6 py-2" v-for="(item, index) in dataInfo" :key="index">
                   <h5 class="general-info fw-light">
-                    {{ item.title }} : <span class="text-secondary"> {{item.data}}</span>
+                    {{ $t(item.title) }} : <span class="text-secondary"> {{item.data}}</span>
                   </h5>
                 </div>
                 <!-- <div class="col-sm-6 py-2">
@@ -156,39 +156,39 @@ export default {
   data() {
     return {
       headTitle: ["about", "about me"],
-      mainTitle: "Web Developer & Blogger",
-      shortDescription: "A Web Developer and Blogger designs and develops websites. They also create and manage blog content. This role combines coding skills with writing. It ensures seamless website functionality and engaging user experiences." ,
+      mainTitle: "main_title",
+      shortDescription: "about_description" ,
       dataInfo: [
         {
-          title: 'Name',
+          title: 'name',
           data: 'ChongEang'
         },
         {
-          title: 'Degree',
+          title: 'degree',
           data:'Bacherlor'
         },
         {
-          title: 'Phone',
+          title: 'phone',
           data:'+012 345 678'
         },
         {
-          title: 'Address',
+          title: 'address',
           data:'123 Street, Phnom Penh, Cambodia'
         },
         {
-          title: 'Birthday',
+          title: 'birthday',
           data:'1 April 1900'
         },
         {
-          title: 'Experience',
+          title: 'experience',
           data:'1 Years'
         },
         {
-          title: 'Email',
+          title: 'email',
           data:'chong@email.com'
         },
         {
-          title: 'Freelance',
+          title: 'freelance',
           data:'Available'
         },
       ]

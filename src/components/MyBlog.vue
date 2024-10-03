@@ -22,12 +22,7 @@
         <div class="blog_item px-3">
           <div class="intro-blog px-2">
             <p class="lead">
-              On my portfolio blog, I regularly post content about web
-              development, sharing insights and tips on JavaScript, Vue.js,
-              Laravel, and other technologies I work with. I also cover topics
-              related to design principles, project development, and the
-              importance of secure and reliable hosting. My blog aims to provide
-              valuable resources for developers and clients alike.
+              {{ $t(shortDescription) }}
             </p>
           </div>
           <div class="row">
@@ -61,6 +56,7 @@ export default {
   },
   data() {
     return {
+      shortDescription: 'blog_description',
       blogDatas: [
         {
           title: "Vue JS 3",
@@ -90,7 +86,7 @@ export default {
   //   try {
   //     // const url = "/v1/courses"
   //     // const response = await axios.get(url)
-  //     const response = await axios.get(courseAPI());
+  //     const response = await axios.get(aritleAPI());
   //     const article = response.data;
   //     this.articles = article;
   //     console.log(this.articles);

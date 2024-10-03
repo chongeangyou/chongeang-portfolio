@@ -3,12 +3,12 @@
     <div class="container_fluid bg-gradient fw-lighter bg-footer">
       <footer class="py-3 mt-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3 text-white">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Skill</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Service</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Blog</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Contact</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">{{ $t('home') }}</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">{{$t('about')}}</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">{{ $t('skill') }}</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">{{$t('service')}}</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">{{$t('blog')}}</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">{{$t('contact')}}</a></li>
         </ul>
         <ul class="nav col-md-12 justify-content-center my-3 ">
           <li class="ms-3"><a class="text-body-info" href="#">

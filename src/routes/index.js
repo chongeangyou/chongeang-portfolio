@@ -6,10 +6,10 @@ const Home = () => import('@/pages/Home')
 import About from '@/pages/About.vue'
 import Skill from '@/pages/Skill.vue'
 import Service from '@/pages/Service.vue'
-import Blog from '@/pages/Blog.vue'
+import Blog from '@/pages/blog/Blog.vue'
 import Contact from '@/pages/Contact.vue'
 import TestApi from '@/components/TestApi.vue'
-import BlogDetial from '@/pages/BlogDetial.vue'
+import BlogDetial from '@/pages/blog/BlogDetial.vue'
 import NotFound from '@/pages/NotFound.vue'
 
 const routes = [
