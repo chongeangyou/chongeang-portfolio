@@ -22,7 +22,7 @@
               >
                 Chong Eang
               </h1>
-              <h2 class="text-intro text-uppercase">{{$t('welcome')}}</h2>
+              <h2 class="text-intro">{{$t('welcome')}}</h2>
               <span id="typedMessage" class="typed">{{ typed }}</span>
             </div>
           </div>

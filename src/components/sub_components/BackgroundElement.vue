@@ -6,10 +6,10 @@
       <div class="border-left border-primary pt-2 pl-4 ml-2">
         <EducationBackground v-for="(item, index) in educations" 
         :key="index"
-        :title="item.title"
-        :name="item.name"
-        :year="item.year"
-        :description="item.description"
+        :title="$t(item.title)"
+        :name="$t(item.name)"
+        :year="$t(item.year)"
+        :description="$t(item.description)"
         >
       </EducationBackground>
       </div>
@@ -19,10 +19,10 @@
       <div class="border-left border-primary pt-2 pl-4 ml-2">
         <ExperienceBackground v-for="(item, index) in experiences"
           :key="index"
-          :title="item.title"
-          :company="item.company"
-          :year="item.year"
-          :description="item.description"
+          :title="$t(item.title)"
+          :company="$t(item.company)"
+          :year="$t(item.year)"
+          :description="$t(item.description)"
         >
 
         </ExperienceBackground>
@@ -45,42 +45,42 @@ export default {
         return{
             educations:[
                 {
-                    title: 'Bacherlor In CSE',
-                    name: 'Royal University Phnom Penh',
-                    year: '2000 - 2050',
-                    description: " Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor e ",
+                    title: 'university_major',
+                    name: 'university_name',
+                    year: 'university_year',
+                    description: "university_desc",
                 },
                 {
-                    title: 'Diploma Degree',
-                    name: 'Sisowath High School',
-                    year: '2000 - 2050',
-                    description: " Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor e ",
+                    title: 'highschool_title',
+                    name: 'highschool',
+                    year: 'highschool_year',
+                    description: "highschool_desc",
                 },
                 {
-                    title: 'Lower Diplopma',
-                    name: 'Arey Khsat Secondary School',
-                    year: '2000 - 2050',
-                    description: " Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor e ",
+                    title: 'secondaryschool_title',
+                    name: 'secondaryschool',
+                    year: 'secondaryschool_year',
+                    description: "secondary_desc",
                 },
             ],
              experiences:[
                 {
-                    title: 'Official',
-                    company: 'Ministry of Post and Telecommucations',
-                    year: '2000 - 2050',
-                    description: " Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor e ",
+                    title: 'mptc_role',
+                    company: 'mptc',
+                    year: 'mptc_year',
+                    description: 'mptc_desc',
                 },
                 {
-                    title: 'Web Developer',
-                    company: 'Freelance',
-                    year: '2000 - 2050',
-                    description: " Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor e ",
+                    title: 'web_dev',
+                    company: 'web_freelance',
+                    year: 'web_dev_year',
+                    description: "web_dev_desc",
                 },
                 {
-                    title: 'Intern Web developer',
-                    company: 'Mitsubishi Phnom Phenh CORP',
-                    year: '2000 - 2050',
-                    description: " Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor e ",
+                    title: 'web_intern',
+                    company: 'web_mc',
+                    year: 'web_intern_year',
+                    description: 'web_intern_desc',
                 },
             ]
         }

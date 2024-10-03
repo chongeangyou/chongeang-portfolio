@@ -30,6 +30,6 @@
   
   <style scoped>
     .text-des{
-      color: #6c757d
+      color:  #c7d0d8
     }
   </style>
