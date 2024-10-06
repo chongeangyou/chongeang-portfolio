@@ -28,11 +28,11 @@ export default {
   async created() {
     try {
       const url =
-        `${process.env.VUE_APP_URL}` + "/title/" + this.$route.params.id;
+        `${process.env.VUE_APP_URL}` + '/title,author/' + this.$route.params.id + ':abs;' + 'William Shakespeare';
       const response = await axios.get(url);
       const data = response.data;
       this.dataDetail = data;
-      console.log(this.dataDetail);
+      //console.log(this.dataDetail);
     } catch (error) {
       console.log(error);
     }

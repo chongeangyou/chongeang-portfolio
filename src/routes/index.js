@@ -3,14 +3,14 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 //import Home from '@/pages/Home.vue'
 const Home = () => import('@/pages/Home')
-import About from '@/pages/About.vue'
-import Skill from '@/pages/Skill.vue'
-import Service from '@/pages/Service.vue'
-import Blog from '@/pages/blog/Blog.vue'
-import Contact from '@/pages/Contact.vue'
-import TestApi from '@/components/TestApi.vue'
-import BlogDetial from '@/pages/blog/BlogDetial.vue'
-import NotFound from '@/pages/NotFound.vue'
+const About = () => import('@/pages/About.vue')
+const Skill = () => import('@/pages/Skill.vue')
+const Service = () => import('@/pages/Service.vue')
+const Blog = () => import('@/pages/blog/Blog.vue')
+const Contact  = () => import('@/pages/Contact.vue')
+const TestApi  = () => import('@/components/TestApi.vue')
+const BlogDetial  = () => import('@/pages/blog/BlogDetial.vue')
+const NotFound  = () => import('@/pages/NotFound.vue')
 
 const routes = [
     {path: '/', component: Home},

@@ -17,8 +17,8 @@
             <div>
               <h2 class="text-intro">{{$t('iam')}}</h2>
               <h1
-                class="display-1 text-uppercase text-white"
-                style="-webkit-text-stroke: 1px #dee2e6"
+                class="display-1 text-uppercase text-name"
+                style="-webkit-text-stroke: 1px #dee2e6;"
               >
                 Chong Eang
               </h1>

@@ -20,7 +20,7 @@
               </svg>
             </a>
           </li>
-          <li class="ms-3"><a class="text-white" href="#">
+          <li class="ms-3"><a class="text-body-info" href="#">
               <svg width="24" class="text-white" heigh="24" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                 <path
@@ -28,7 +28,7 @@
               </svg>
             </a>
           </li>
-          <li class="ms-3"><a class="text-body-secondary" href="#">
+          <li class="ms-3"><a class="text-body-info" href="#">
               <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                 <path
@@ -37,7 +37,7 @@
             </a>
           </li>
         </ul>
-        <p class="text-center text-white">© 2024 Company, Inc</p>
+        <p class="text-center text-white">© 2024 Chong, Portfolio</p>
       </footer>
     </div>
     <div>
@@ -55,5 +55,9 @@
  <style scoped>
   .bg-footer{
     background: #213A57
+  }
+  
+  .text-body-info:hover svg path{
+    fill:white;
   }
  </style>

@@ -28,13 +28,15 @@
     /* border-radius: 50%; */
   }
 
-  /* .text-profile:hover {
-    opacity: 0.3;
-    text-align: center;
-  } */
+  .text-profile .text-name{
+    color: white;
+  }
+  .text-profile:hover .text-name{
+    color: #4FACFE;
+  }
 
-  .text-white {
-    color: #fff !important;
+  .text-white:hover {
+    color: pink;
   }
 
   .text-uppercase {
