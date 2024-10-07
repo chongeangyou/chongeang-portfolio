@@ -4,15 +4,15 @@
       <div class="container-fluid text-light">
         <a class="navbar-brand" href="#">{{$t('chong')}} | Portfolio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" @click="toggleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarText">
+        <div :class="['collapse', 'navbar-collapse', { show: isCollapsed }]" id="navbarText">
           <span class="navbar-text me-auto">
           </span>
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item" v-for="(item, index) in navs" :key="index">
-              <router-link class="nav-link" :class="{active: $route.path == item.path }" :to="item.path" > {{ $t(item.name) }}</router-link>
+              <router-link @click="closeNavbar" class="nav-link" :class="{active: $route.path == item.path }" :to="item.path" > {{ $t(item.name) }}</router-link>
             </li>
             <!-- <li class="nav-item">
               <router-link class="nav-link" :class="{active: $route.path == '/about'}" to="/about">About</router-link>
@@ -72,18 +72,25 @@ export default {
           name: 'contact'
         }
       ],
+      isCollapsed: false,
     }
   },
   methods:{
     changeLanguage(){
-      console.log('dd')
       if(this.$i18n.locale == 'en'){
         this.$i18n.locale = 'khm';
         console.log('dpppd')
       }else{
         this.$i18n.locale = 'en'
       }
+      this.closeNavbar();
     },
+    toggleNavbar() {
+      this.isCollapsed = !this.isCollapsed; // Toggles the navbar collapse
+    },
+    closeNavbar() {
+      this.isCollapsed = false; // Close the navbar when an item is clicked
+    }
   },
   
 }

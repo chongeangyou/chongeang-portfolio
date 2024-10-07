@@ -23,7 +23,7 @@
           <div class="col-lg-8">
             <Form class="row g-3 text-secondary">
               <div class="col-md-6">
-                <label for="inputFullname" class="Form-label">{{ $t(fullname) }}</label>
+                <label for="fullname" class="Form-label">{{ $t(fullname) }}</label>
                 <Field type="text" class="form-control border-secondary " name="fullname" :rules="nameRule" :v-model="fullname" id="fullname" :placeholder="$t('place_fullname')" />
                 <ErrorMessage class="error" name="fullname"/>
               </div>
