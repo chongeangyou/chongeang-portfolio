@@ -71,8 +71,8 @@
                   </h5>
                 </div> -->
               </div>
-              <a href="#" class="btn btn-outline-primary">Contact Me</a>
-              <a href="#" class="btn btn-outline-primary  ms-3">Learn More</a>
+              <router-link to="/contact" class="btn btn-outline-primary fw-light">{{ $t('contact_me') }}</router-link>
+              <!-- <a href="#" class="btn btn-outline-primary  ms-3">Learn More</a> -->
             </div>
           </div>
           <div class="col-xxl-4 col-lg-5 col-md-5 col-sm-6">

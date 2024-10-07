@@ -45,8 +45,8 @@
              {{$t(devDescription)}}
             </p>
             <p>
-              <a class="btn btn-sm btn-outline-primary" href="#"
-                >{{ $t(viewMore) }} »</a
+              <router-link class="btn btn-sm btn-outline-primary" to="/service-detial"
+                >{{ $t(viewMore) }} »</router-link
               >
             </p>
           </div>
@@ -68,8 +68,8 @@
               {{$t(designDescription)}}
             </p>
             <p>
-              <a class="btn btn-sm btn-outline-primary" href="#"
-                >{{$t(viewMore)}} »</a
+             <router-link class="btn btn-sm btn-outline-primary" to="/service-detial"
+                >{{ $t(viewMore) }} »</router-link
               >
             </p>
           </div>
@@ -91,8 +91,8 @@
               {{$t(hostDescription)}}
             </p>
             <p>
-              <a class="btn btn-sm btn-outline-primary" href="#"
-                >{{$t(viewMore)}} »</a
+              <router-link class="btn btn-sm btn-outline-primary" to="/service-detial"
+                >{{ $t(viewMore) }} »</router-link
               >
             </p>
           </div>

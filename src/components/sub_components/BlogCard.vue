@@ -14,8 +14,8 @@
         <p>{{ line }}</p>
       </div>
       <div class="card-footer">
-        <router-link class="btn btn-sm btn-outline-info" :to="`/blog/${url}`">Read More</router-link>
-        <small class="text-muted ms-2">Last updated 3 mins ago</small>
+        <router-link class="btn btn-sm btn-outline-info" :to="`/blog/${url}`">{{$t('read_more')}}</router-link>
+        <small class="text-muted ms-2">{{ $t('last_update') }}</small>
       </div>
     </div>
   </div>

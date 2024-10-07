@@ -24,23 +24,23 @@
             <Form class="row g-3 text-secondary">
               <div class="col-md-6">
                 <label for="inputFullname" class="Form-label">{{ $t(fullname) }}</label>
-                <Field type="text" class="form-control border-secondary" name="fullname" :rules="nameRule" :v-model="fullname" id="fullname" placeholder="Please input your fullname" />
-                <ErrorMessage name="fullname"/>
+                <Field type="text" class="form-control border-secondary " name="fullname" :rules="nameRule" :v-model="fullname" id="fullname" :placeholder="$t('place_fullname')" />
+                <ErrorMessage class="error" name="fullname"/>
               </div>
               <div class="col-md-6">
                 <label for="inputEmail" class="form-label mb-0">{{$t(email)}}</label>
-                <Field type="text" class="form-control border-secondary" name="email" :rules="emailRule" :v-model="email" id="inputEmail" placeholder="Please input your eamail" />
-                <ErrorMessage name="email"/>
+                <Field type="text" class="form-control border-secondary" name="email" :rules="emailRule" :v-model="email" id="inputEmail" :placeholder="$t('place_email')" />
+                <ErrorMessage class="error" name="email"/>
               </div>
               <div class="col-12">
                 <label for="inputSubject" class="form-label">{{$t(subject)}}</label>
-                <Field type="text" class="form-control border-secondary" name="subject" :rules="subjectRule" :v-model="subject" id="inputSubject" placeholder="What is your subject?" />
-                <ErrorMessage name="subject"/>
+                <Field type="text" class="form-control border-secondary" name="subject" :rules="subjectRule" :v-model="subject" id="inputSubject" :placeholder="$t('place_subject')" />
+                <ErrorMessage class="error" name="subject"/>
               </div>
               <div class="col-12">
                 <label for="inputMessage" class="form-label">{{$t(message)}}</label>
-                <Field class="form-control border-secondary" name="message" :rules="messageRule" :v-model="message" type="text" id="inputMessage" rows="3" placeholder="Input your message" />
-                <ErrorMessage name="message"/>
+                <Field class="form-control border-secondary" name="message" :rules="messageRule" :v-model="message" type="text" id="inputMessage" rows="3" :placeholder="$t('place_message')" />
+                <ErrorMessage class="error" name="message"/>
               </div>
               <div class="col-12">
                 <div class="form-check">
@@ -64,6 +64,7 @@
 <script>
 import { Form, Field, ErrorMessage } from "vee-validate"
 import * as Yup from "yup"
+
 export default {
   components: { Form, Field, ErrorMessage },
   data(){
@@ -78,9 +79,10 @@ export default {
       subjectRule: Yup.string().required(),
       messageRule: Yup.string().required(),
       shortDescription: 'contact_description',
-      submit:'submit'
+      submit:'submit',
     }
-  }
+  },
+  
 }
 </script>
 
@@ -95,7 +97,8 @@ export default {
   margin-bottom: 3.6rem;
   color: #000000;
  }
- ErrorMessage {
-  color:red
+.error {
+  font-weight: lighter;
+  color:#1488CC;
  }
 </style>

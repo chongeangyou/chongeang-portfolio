@@ -3,12 +3,12 @@
     <div class="container_fluid bg-gradient fw-lighter bg-footer">
       <footer class="py-3 mt-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3 text-white">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">{{ $t('home') }}</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">{{$t('about')}}</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">{{ $t('skill') }}</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">{{$t('service')}}</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">{{$t('blog')}}</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">{{$t('contact')}}</a></li>
+          <li class="nav-item"><router-link to="/" class="nav-link px-2 text-white">{{ $t('home') }}</router-link></li>
+          <li class="nav-item"><router-link to="/about" class="nav-link px-2 text-white">{{$t('about')}}</router-link></li>
+          <li class="nav-item"><router-link to="/skill" class="nav-link px-2 text-white">{{ $t('skill') }}</router-link></li>
+          <li class="nav-item"><router-link to="/service" class="nav-link px-2 text-white">{{$t('service')}}</router-link></li>
+          <li class="nav-item"><router-link to="/blog" class="nav-link px-2 text-white">{{$t('blog')}}</router-link></li>
+          <li class="nav-item"><router-link to="/contact" class="nav-link px-2 text-white">{{$t('contact')}}</router-link></li>
         </ul>
         <ul class="nav col-md-12 justify-content-center my-3 ">
           <li class="ms-3"><a class="text-body-info" href="#">

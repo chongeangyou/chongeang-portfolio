@@ -11,12 +11,14 @@ const Contact  = () => import('@/pages/Contact.vue')
 const TestApi  = () => import('@/components/TestApi.vue')
 const BlogDetial  = () => import('@/pages/blog/BlogDetial.vue')
 const NotFound  = () => import('@/pages/NotFound.vue')
+const ServiceDetial = () => import('@/pages/ServiceDetial.vue')
 
 const routes = [
     {path: '/', component: Home},
     {path: '/about', component: About},
     {path: '/skill', component: Skill },
     {path: '/service', component: Service},
+    {path: '/service-detial', component: ServiceDetial},
     {path: '/blog', component: Blog},
     {path: '/blog/:id', component: BlogDetial},
     {path: '/contact', component: Contact},

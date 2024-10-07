@@ -2,7 +2,7 @@
   <div class="row px-3 align-items-center">
     <div class="col-1"></div>
     <div class="col-lg-5 mx-3">
-      <h3 class="mb-4 text-white">Educations</h3>
+      <h3 class="mb-4 text-white">{{$t('education')}}</h3>
       <div class="border-left border-primary pt-2 pl-4 ml-2">
         <EducationBackground v-for="(item, index) in educations" 
         :key="index"
@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="col-lg-5 mx-3">
-      <h3 class="mb-4 text-white">Expericences</h3>
+      <h3 class="mb-4 text-white">{{$t('experiences')}}</h3>
       <div class="border-left border-primary pt-2 pl-4 ml-2">
         <ExperienceBackground v-for="(item, index) in experiences"
           :key="index"
